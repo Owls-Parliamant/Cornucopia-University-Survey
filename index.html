@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="padded">
+      <h1 id="title">Cornucopia University Welcome Week Survey</h1>
+    <p id="description">Thank you for helping us improve the welcome week experience</p>
+    <div class="container">
+      <form id="survey-form">
+        <fieldset id="personal-information">
+          <div class="form group">
+            <label id="name-label" for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="Johannes Cerva" required /></label>
+          </div>
+          <div class="form group">
+            <label id="number-label" for="number">Input Your Age (years): <input id="number" name="number" type="number" min="13" max="120" placeholder="18" required /></label>
+          </div>
+          <div class="form group">
+            <label id="email-label" for="email">Enter Your E-ddress: <input id="email" name="email" type="email" placeholder="Johannes@me.com" required /></label>
+          </div>
+        </fieldset>
+        <fieldset id="choose-house">
+          What is your house?
+          <div id="lords-of-air-radio">
+            <label for="lord-of-air"><input id="lords-of-air" value="lords-of-air" type="radio" name="house-choice" class="inline" /> Lords of the Air</label>
+          </div>
+          <div id="invincible-shark-radio">
+            <label for="invincible-shark"><input id="invincible-shark" value="invincible-shark" type="radio" name="house-choice" class="inline" /> Invincible Shark</label>
+          </div>
+          <div id="ambassadors-of-sea-radio">
+            <label for="ambassadors-of-sea"><input id="ambassadors-of-sea" value="ambassadors-of-sea" type="radio" name="house-choice" class="inline" /> Ambassadors of the Sea</label>
+          </div>
+          <div id="dance-of-dolphin-radio">
+            <label for="dance-of-dolphin"><input id="dance-of-dolphin" value="dance-of-dolphin" type="radio" name="house-choice" class="inline" /> Dance of the Dolphin</label>
+          </div>
+          <div id="master-of-strategy-radio">
+            <label for="master-of-strategy"><input id="master-of-strategy" value="master-of-strategy" type="radio" name="house-choice" class="inline" /> Master of Strategy</label>
+          </div>
+          <div id="beast-of-stars-radio">
+            <label for="beast-of-stars"><input id="beast-of-stars" value="beast-of-stars" type="radio" name="house-choice" class="inline" /> Beast of Stars</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div id="referrers">
+            <label id="referrer" for="dropdown">What is your major?
+              <select id="dropdown" name="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Art</option>
+                <option value="2">Education</option>
+                <option value="3">History</option>
+                <option value="4">Latin</option>
+                <option value="5">Medicine</option>
+                <option value="6">Music</option>
+                <option value="7">Oration</option>
+                <option value="8">Science</option>
+                <option value="9">Technology</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div id="referrers">
+            <label for="referrer">How did you hear about us?
+              <select id="referrer" name="referrer">
+                <option value="">(select one)</option>
+                <option value="1">From a friend</option>
+                <option value="2">From school</option>
+                <option value="3">Online</option>
+                <option value="4">Other</option>
+              </select>
+            </label>
+          </div>
+          <div id="reference">
+            <label for="refer">Would you recommend Cornucopia University to a friend?
+              <select id="refer" name="refer">
+                <option value="">(select one)</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+                <option value="3">Maybe</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+What parts of welcome week did you enjoy?
+          <div id="what-favorite">
+            <div id="welcome-ceremony">
+              <label for="welcome ceremony"><input id="welcome ceremony" value="welcome ceremony" type="checkbox" name="favorite-choice" class="inline" /> Welcome ceremony</label>
+            </div>
+            <div id="small-groups">
+              <label for="small group"><input id="small group" value="small group" type="checkbox" name="favorite-choice" class="inline" /> Small group discussions</label>
+            </div>
+            <div id="testimonials">
+              <label for="testimony"><input id="testimony" value="testimony" type="checkbox" name="favorite-choice" class="inline" /> Testimonials</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="text-input">
+            <label class="text-label" for="improve">What would you like improved?
+              <textarea id="improve" name="improve" rows="3" cols="30"></textarea>
+            </label>
+          </div>
+          <div class="text-input">
+            <label class="text-label" for="additional">Any additional comments or suggestions?
+              <textarea id="additional" name="additional" rows="3" cols="30"></textarea>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="terms-and-conditions" name="terms-and-conditions">
+            <input id="terms-and-conditions" type="checkbox" value="terms-accepted" required name="terms-and-conditions" class="inline" /> I accept the <a href="">terms and conditions</a>
+          </label>
+        </fieldset>
+        <div class="padded">
+          <input id="submit" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+   </div>
+  </body>
+</html>
